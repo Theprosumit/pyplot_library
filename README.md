@@ -1,5 +1,4 @@
-# pyplot_library
-here  i uplode different python program on pyplot library 
+# pyplot_librar
 import matplotlib.pyplot as plt
  
 # initializing the data
