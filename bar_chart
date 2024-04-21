@@ -1,0 +1,57 @@
+
+import matplotlib.pyplot as plt
+import pandas as pd
+ 
+# Reading the tips.csv file
+data = pd.read_csv('tips.csv')
+ 
+# initializing the data
+x = data['day']
+y = data['total_bill']
+ 
+# plotting the data
+plt.bar(x, y)
+ 
+# Adding title to the plot
+plt.title("Tips Dataset")
+ 
+# Adding label on the y-axis
+plt.ylabel('Total Bill')
+ 
+# Adding label on the x-axis
+plt.xlabel('Day')
+ 
+plt.show()
+
+
+• color: For the bar faces
+• edgecolor: Color of edges of the bar
+• linewidth: Width of the bar edges
+• width: Width of the bar
+Example:
+• Python3
+
+import matplotlib.pyplot as plt
+import pandas as pd
+ 
+# Reading the tips.csv file
+data = pd.read_csv('tips.csv')
+ 
+# initializing the data
+x = data['day']
+y = data['total_bill']
+ 
+# plotting the data
+plt.bar(x, y, color='green', edgecolor='blue', 
+        linewidth=2)
+ 
+# Adding title to the plot
+plt.title("Tips Dataset")
+ 
+# Adding label on the y-axis
+plt.ylabel('Total Bill')
+ 
+# Adding label on the x-axis
+plt.xlabel('Day')
+ 
+plt.show()
